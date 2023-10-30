@@ -11,6 +11,8 @@
 
 # Travelling Salesman Graph
 ![image](https://github.com/nayan-pust/AI-LAB/assets/114688354/bb08ed78-0095-4733-b47f-8e0b229ea8f5)
+![image](https://github.com/nayan-pust/AI-LAB/assets/114688354/290d5305-ae51-4096-b88e-9b5e92f03e8e)
+
 
 # Iris Flower Classicfication 
 ![image](https://github.com/nayan-pust/AI-LAB/assets/114688354/71cc2b51-31ae-4547-82c8-c0e2a066857e)

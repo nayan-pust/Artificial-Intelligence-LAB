@@ -1,0 +1,22 @@
+def tower_of_hanoi(n, from_rod, to_rod, aux_rod):
+    if n == 1:
+        print("Move disk 1 from rod", from_rod, "to rod", to_rod)
+        return 1  # This is the base case, and it represents one move.
+
+    # Recursively solve for (n-1) disks and count the moves
+    moves1 = tower_of_hanoi(n - 1, from_rod, aux_rod, to_rod)
+
+    # Move the nth disk and count it
+    print("Move disk", n, "from rod", from_rod, "to rod", to_rod)
+    moves2 = 1
+
+    # Recursively solve for (n-1) disks on the auxiliary rod and count the moves
+    moves3 = tower_of_hanoi(n - 1, aux_rod, to_rod, from_rod)
+
+    # The total moves for n disks is the sum of moves1, moves2, and moves3
+    total_moves = moves1 + moves2 + moves3
+    return total_moves
+
+n = int(input("Enter number of disks: "))
+total_moves = tower_of_hanoi(n, 'A', 'C', 'B')
+print("Total moves:", total_moves)

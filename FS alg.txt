@@ -24,18 +24,3 @@ def train(concept,target):
 
 result=train(concept,target)
 print(result)
-
-day=input("Enter 6 word to check:")
-day=day.split()
-check=True
-
-for i in range(len(result)):
-    if result[i]=='?'or result[i]==day[i]:
-        check=True;
-    else:
-        check=False;
-        break;
-if check:
-    print("Enjoy sport")
-else:
-    print("Not Possible")

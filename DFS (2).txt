@@ -21,6 +21,6 @@ def dfs(graph, start, visited=None):
 # Call the function with a starting vertex
 
 # Call the function with a starting vertex (for example, starting from vertex 3)
-starting_vertex = '1'
+starting_vertex = 1
 print("DFS Traversal starting from vertex is :")
 dfs(graph, starting_vertex)

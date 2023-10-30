@@ -1,0 +1,23 @@
+import pandas as pd
+import numpy as np
+from scipy import stats
+# i) Read data from CSV file into a DataFrame
+df = pd.read_csv('G:data.csv')
+array=np.array(df)
+print(df)
+
+
+# ii) Calculating Mean, Median, Mode, Variance, and Standard Deviation
+dataset = [3, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+# dataset = df['E:\B.csv'].tolist()
+mean_value = np.mean(dataset)
+median_value = np.median(dataset)
+mode_value = stats.mode(dataset, keepdims=True).mode[0]  # Explicitly set keepdims parameter
+variance_value = np.var(dataset)
+std_deviation_value = np.std(dataset)
+
+print("Mean of the dataset is:", mean_value)
+print("Median of the dataset is:", median_value)
+print("Mode of the dataset is:", mode_value)
+print("Variance of the dataset is:", variance_value)
+print("Standard Deviation of the dataset is:", std_deviation_value)

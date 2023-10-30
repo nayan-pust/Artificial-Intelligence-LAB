@@ -1,0 +1,26 @@
+graph = {
+    1: [2,3],
+    2: [ 4],
+    3: [1, 4,7],
+    4: [3,2,5,6],
+    5:[4],
+    6:[4],
+    7:[3]
+}
+
+# Define a function to perform DFS on a graph
+def dfs(graph, start, visited=None):
+    if visited is None:
+        visited = set()
+    visited.add(start)
+    print(start)
+    for neighbor in graph.get(start, []):
+        if neighbor not in visited:
+            dfs(graph, neighbor, visited)
+
+# Call the function with a starting vertex
+
+# Call the function with a starting vertex (for example, starting from vertex 3)
+starting_vertex = 1
+print("DFS Traversal starting from vertex is :")
+dfs(graph, starting_vertex)
